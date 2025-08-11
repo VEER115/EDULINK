@@ -1,0 +1,6 @@
+{
+  "appId": "com.quickfix.app",
+  "appName": "EduLink",
+  "webDir": "pwa-demo",
+  "bundledWebRuntime": false
+}

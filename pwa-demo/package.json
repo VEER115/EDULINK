@@ -1,0 +1,9 @@
+{
+  "name": "edulink-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "http-server ./ -p 8000",
+    "build": "echo 'No build step: files are ready'"
+  },
+  "dependencies": {}
+}

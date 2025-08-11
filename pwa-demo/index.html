@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>EduLink — Student Help & Services</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff784f"/>
+<link rel="icon" href="icon_192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="logo" id="logo">EduLink</div>
+      <div id="live-users" class="live-users">● 34</div>
+    </header>
+
+    <main id="main">
+      <section id="landing" class="screen hero">
+        <div class="hero-left">
+          <h1>EduLink</h1>
+          <p>Your campus helpers — Tutors, Designers, Editors & Study Buddies.</p>
+          <div class="cta-row">
+            <button id="open-app" class="btn primary">Open App</button>
+            <button id="install-btn" class="btn">Install</button>
+          </div>
+          <p class="muted">Tap the logo five times to unlock a secret demo.</p>
+        </div>
+        <div class="hero-right">
+          <img src="icon_256.png" alt="EduLink preview" class="mockphone">
+        </div>
+      </section>
+
+      <section id="app-screen" class="screen hidden">
+        <div class="app-header">
+          <div class="search-row">
+            <input id="search" placeholder="Search services, e.g., tutoring, proofreading..." />
+            <button id="filter-btn" class="btn small">Filter</button>
+          </div>
+          <div class="tabs">
+            <button class="tab active" data-tab="services">Services</button>
+            <button class="tab" data-tab="chat">Chat</button>
+            <button class="tab" data-tab="bookings">Bookings</button>
+            <button class="tab" data-tab="announcements">Announcements</button>
+          </div>
+        </div>
+
+        <div class="app-body">
+          <div id="services-tab" class="tabpane">
+            <div id="services-list" class="cards"></div>
+          </div>
+
+          <div id="chat-tab" class="tabpane hidden">
+            <div id="chat-window" class="chat-window"></div>
+            <div class="chat-input">
+              <input id="chat-input" placeholder="Type a message..." />
+              <button id="chat-send" class="btn small primary">Send</button>
+            </div>
+          </div>
+
+          <div id="bookings-tab" class="tabpane hidden">
+            <div id="bookings-list" class="cards"></div>
+          </div>
+
+          <div id="announcements-tab" class="tabpane hidden">
+            <div id="announcements-list" class="cards">
+              <div class="card announcement">
+                <h3>Inter-college Fest: Auditions Tomorrow</h3>
+                <p>Auditions for dance and music will be held at 4 PM in the auditorium.</p>
+              </div>
+              <div class="card announcement">
+                <h3>Submission Deadline Extended</h3>
+                <p>Project submissions extended to Friday by midnight.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="judge-badge" class="judge-badge hidden">JUDGE MODE</div>
+      </section>
+
+    </main>
+
+    <div id="install-banner" class="install-banner hidden">
+      <div>Install EduLink for a better demo experience</div>
+      <div>
+        <button id="install-accept" class="btn primary">Install</button>
+        <button id="install-dismiss" class="btn">No thanks</button>
+      </div>
+    </div>
+
+    <footer class="footer">EduLink • Demo app (offline-ready)</footer>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>

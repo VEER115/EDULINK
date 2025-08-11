@@ -1,0 +1,50 @@
+:root{
+  --bg:#ffefeb; --accent:#ff784f; --accent-dark:#d85e3b; --card:#ffffff;
+  --muted:#6b6b6b; --success:#22c55e;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(135deg,#fff7f2,#ffece6);margin:0;color:#222;}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:transparent;}
+.logo{font-weight:800;font-size:20px;color:var(--accent-dark);cursor:pointer;}
+.live-users{font-size:13px;background:rgba(255,255,255,0.9);padding:6px 10px;border-radius:20px;box-shadow:0 2px 6px rgba(0,0,0,0.08);}
+.screen{display:flex;gap:20px;align-items:center;padding:30px;max-width:1000px;margin:20px auto;border-radius:16px;}
+.hero{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));}
+.hero-left{flex:1}
+.hero-right{width:260px;text-align:center}
+.mockphone{width:200px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,0.12);}
+h1{font-size:40px;margin:0;color:var(--accent-dark)}
+p.muted{color:var(--muted);font-size:13px;margin-top:8px}
+.btn{border:0;padding:10px 14px;border-radius:8px;cursor:pointer;background:white;box-shadow:0 6px 16px rgba(0,0,0,0.06);}
+.btn.primary{background:var(--accent);color:white;font-weight:700}
+.cta-row{display:flex;gap:10px;margin-top:18px}
+.hidden{display:none !important}
+
+.app-header{width:100%;background:transparent;padding:12px 18px;border-bottom:1px solid rgba(0,0,0,0.05)}
+.search-row{display:flex;gap:8px;align-items:center}
+.search-row input{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(0,0,0,0.08)}
+.tabpane{padding:18px}
+.tabs{display:flex;gap:8px;margin-top:10px}
+.tab{padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.6);cursor:pointer}
+.tab.active{background:linear-gradient(90deg,#ffd9cf,#ffbfa7);font-weight:700}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.card h3{margin:0 0 6px 0}
+.tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#f3f4f6;font-size:12px;margin-top:8px}
+.price{font-weight:800;color:var(--accent-dark);margin-top:8px;display:inline-block}
+.action-row{display:flex;gap:8px;margin-top:12px}
+.small{padding:6px 8px;font-size:13px;border-radius:8px}
+
+.chat-window{height:320px;overflow:auto;padding:8px;border-radius:8px;background:linear-gradient(180deg,#fff,#fff9f7)}
+.chat-bubble{padding:8px 12px;border-radius:12px;margin:6px 0;max-width:78%}
+.bubble-left{background:#fff;border:1px solid rgba(0,0,0,0.05)}
+.bubble-right{background:linear-gradient(90deg,#ffd9cf,#ffbfa7);color:#3a2b2b;margin-left:auto}
+
+.chat-input{display:flex;gap:8px;margin-top:8px}
+.chat-input input{flex:1;padding:10px;border-radius:10px;border:1px solid rgba(0,0,0,0.06)}
+
+.judge-badge{position:fixed;right:12px;bottom:12px;background:#111;color:white;padding:8px 10px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+
+.install-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:20px;background:white;padding:12px 16px;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.12);display:flex;gap:12px;align-items:center}
+
+.footer{position:fixed;left:0;right:0;bottom:0;padding:8px 12px;text-align:center;font-size:12px;color:var(--muted)}
