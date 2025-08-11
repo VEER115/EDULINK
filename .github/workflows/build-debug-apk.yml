@@ -25,12 +25,12 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
-      - name: Install Android SDK tools
+      - name: Set up Android SDK
         uses: android-actions/setup-android@v2
         with:
           api-level: 33
-          target: default
-          components: build-tools;33.0.2,platforms;android-33,platform-tools
+          build-tools: 33.0.2
+          components: platform-tools
 
       - name: Install dependencies
         run: |
@@ -52,7 +52,6 @@ jobs:
         run: |
           cd pwa-demo
           npx cap init com.quickfix.app EduLink --web-dir=.
-          # add android platform if missing
           if [ ! -d "android" ]; then
             npx cap add android || true
           fi
